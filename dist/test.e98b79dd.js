@@ -117,9 +117,87 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"main.js":[function(require,module,exports) {
+})({"css.js":[function(require,module,exports) {
+"use strict";
 
-},{}],"C:/Users/lance/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var string = "\n    .skin * {\n    box-sizing: border-box;\n    padding: 0;\n    margin: 0;\n  }\n  .skin *::before,\n  .skin *::after {\n    box-sizing: border-box;\n    padding: 0;\n    margin: 0;\n  }\n  \n  .skin {\n    position: relative;\n    background-color: #ffe600;\n    height: 100vh;\n  }\n  \n  .nose {\n    border-style: solid;\n    border-width: 11px;\n    border-color: black transparent transparent transparent;\n    border-bottom: none;\n    width: 0px;\n    height: 0px;\n    left: 50%;\n    top: 30vh;\n    margin-left: -11px;\n    position: absolute;\n  }\n  \n  .yuan-wrapper {\n    width: 22px;\n    height: 8px;\n    position: absolute;\n    left: 50%;\n    margin-left: -11px;\n    top: -19px;\n    overflow: hidden;\n  }\n  .yuan {\n    width: 22px;\n    height: 11px;\n    position: absolute;\n    left: 50%;\n    top: 2px;\n    margin-left: -11px;\n    border-radius: 50%;\n    background-color: black;\n  }\n  \n  .eye-left {\n    width: 50px;\n    height: 50px;\n    border: 3px solid black;\n    background: #2e2e2e;\n    left: 50%;\n    top: 30vh;\n    margin-top: -50px;\n    margin-left: -25px;\n    border-radius: 50%;\n    position: absolute;\n    transform: translateX(-120px);\n  }\n  \n  .eye-right {\n    width: 50px;\n    height: 50px;\n    border: 3px solid black;\n    background: #2e2e2e;\n    left: 50%;\n    top: 30vh;\n    margin-top: -50px;\n    margin-left: -25px;\n    border-radius: 50%;\n    position: absolute;\n    transform: translateX(120px);\n  }\n  \n  .eye-right::before {\n    content: \"\";\n    display: block;\n    border: 2px solid black;\n    width: 24px;\n    height: 24px;\n    position: absolute;\n    border-radius: 50%;\n    background: white;\n    left: 6px;\n  }\n  .eye-left::before {\n    content: \"\";\n    display: block;\n    border: 2px solid black;\n    width: 24px;\n    height: 24px;\n    position: absolute;\n    border-radius: 50%;\n    background: white;\n    left: 6px;\n  }\n  \n  .lip-left {\n    border: 3px solid black;\n    border-color: transparent transparent black black;\n    width: 80px;\n    height: 50px;\n    position: absolute;\n    left: 50%;\n    margin-left: -84px;\n    top: 30vh;\n    border-radius: 0 120px/80px;\n    transform: rotate(-25deg);\n    z-index: 3;\n    background-color: #ffe600;\n  }\n  \n  .lip-right {\n    border: 3px solid black;\n    border-color: transparent black black transparent;\n    width: 80px;\n    height: 50px;\n    position: absolute;\n    right: 50%;\n    margin-right: -82px;\n    top: 30vh;\n    border-radius: 120px/80px 0;\n    transform: rotate(25deg);\n    z-index: 3;\n    background-color: #ffe600;\n  }\n  \n  .lip-left::before {\n    content: \"\";\n    display: block;\n    width: 6px;\n    height: 30px;\n    position: absolute;\n    top: -4px;\n    margin-left: -4px;\n    background-color: #ffe600;\n  }\n  \n  .lip-right::after {\n    content: \"\";\n    display: block;\n    width: 6px;\n    height: 30px;\n    position: absolute;\n    top: -4px;\n    margin-left: 72px;\n    background-color: #ffe600;\n  }\n  .mouth-down {\n    border: 3px solid black;\n    width: 120px;\n    height: 500px;\n    position: absolute;\n    top: -330px;\n    border-radius: 60%;\n    background-color: #9b000a;\n    overflow: hidden;\n  }\n  \n  .mouth-down-wrapper {\n    width: 120px;\n    height: 200px;\n    position: absolute;\n    left: 50%;\n    margin-left: -60px;\n    top: 30vh;\n    margin-top: 30px;\n    overflow: hidden;\n  }\n  \n  .mouth-down::before {\n    content: \"\";\n    display: block;\n    width: 200px;\n    height: 300px;\n    position: absolute;\n    top: 360px;\n    left: 50%;\n    margin-left: -100px;\n    border-radius: 50%;\n    background-color: #ff485f;\n  }\n  \n  .cheek-left {\n    border: 3px solid black;\n    width: 70px;\n    height: 70px;\n    position: absolute;\n    border-radius: 50%;\n    left: 50%;\n    margin-left: -35px;\n    transform: translateX(180px);\n    top: 30vh;\n    margin-top: 30px;\n    background-color: #ff0000;\n  }\n  .cheek-right {\n    border: 3px solid black;\n    width: 70px;\n    height: 70px;\n    position: absolute;\n    border-radius: 50%;\n    left: 50%;\n    margin-left: -35px;\n    transform: translateX(-180px);\n    top: 30vh;\n    margin-top: 30px;\n    background-color: #ff0000;\n  }\n  @keyframes wave {\n    0% {\n      transform: rotate(0);\n    }\n    30% {\n      transform: rotate(15deg);\n    }\n    66% {\n      transform: rotate(-15deg);\n    }\n    100% {\n      transform: rotate(0deg);\n    }\n  }\n  .nose:hover {\n    transform-origin: center bottom;\n    animation: wave 300ms infinite linear;\n  }\n  \n";
+var _default = string;
+exports.default = _default;
+},{}],"test.js":[function(require,module,exports) {
+"use strict";
+
+var _css = _interopRequireDefault(require("./css.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//模块化css文件
+//let string2 =``
+var n = 1;
+var time = 50; //准备两个demo，同时写入Text和html(css样式)。最精髓的地方。
+
+var run = function run() {
+  //如果是回车或空格则替换，否则照搬
+  // if(string[n]==='\n'){
+  //     string2+= '</br>'
+  // }else if(string[n]===""){
+  //     string2+= '&nbsp'
+  // }else{
+  //     string2+=string[n]
+  // }
+  demo.innerHTML = _css.default.substring(0, n);
+  demo2.innerText = _css.default.substring(0, n); //让用户看到的代码 
+
+  n += 1;
+
+  if (n > _css.default.length) {
+    //当n大于字符串长度就停止写入
+    window.clearInterval(id);
+  }
+
+  demo2.scrollTop = demo2.scrollHeight; //每次写入都将滚动条滚到滚动条的最大高度
+};
+
+var play = function play() {
+  return setInterval(run, time); //设立时钟
+};
+
+var pause = function pause() {
+  window.clearInterval(id); //清除时钟，demo停止写入
+};
+
+var slow = function slow() {
+  pause();
+  time = 100;
+  id = play();
+};
+
+var middle = function middle() {
+  pause();
+  time = 50;
+  id = play();
+};
+
+var fast = function fast() {
+  pause();
+  time = 0;
+  id = play();
+};
+
+var id = play();
+btnPause.onclick = pause;
+
+btnPlay.onclick = function () {
+  id = play();
+};
+
+btnSlow.onclick = slow;
+btnMiddle.onclick = middle;
+btnFast.onclick = fast;
+},{"./css.js":"css.js"}],"../../../AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -147,7 +225,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52318" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64151" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -322,5 +400,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/lance/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js","main.js"], null)
-//# sourceMappingURL=/main.1f19ae8e.js.map
+},{}]},{},["../../../AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js","test.js"], null)
+//# sourceMappingURL=/test.e98b79dd.js.map
