@@ -107,7 +107,7 @@
   height: 50px;
   position: absolute;
   left: 50%;
-  margin-left: -83px;
+  margin-left: -84px;
   top: 30vh;
   border-radius: 0 120px/80px;
   transform: rotate(-25deg);
@@ -122,7 +122,7 @@
   height: 50px;
   position: absolute;
   right: 50%;
-  margin-right: -83px;
+  margin-right: -84px;
   top: 30vh;
   border-radius: 120px/80px 0;
   transform: rotate(25deg);
@@ -211,6 +211,14 @@
   top: 30vh;
   margin-top: 30px;
   background-color: #ff0000;
+}
+@media (max-width: 500px) {
+  .cheek-left {
+    transform: translateX(-150px);
+  }
+  .cheek-right {
+    transform: translateX(150px);
+  }
 }
 @keyframes wave {
   0% {
